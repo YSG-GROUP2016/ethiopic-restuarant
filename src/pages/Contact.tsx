@@ -7,12 +7,12 @@ import Footer from '@/components/Footer';
 const Contact = () => {
   const handleWhatsAppReservation = () => {
     const message = encodeURIComponent("Hello, I'd like to make a reservation for [X people] on [Date & Time].");
-    window.open(`https://wa.me/1234567890?text=${message}`, '_blank');
+    window.open(`https://wa.me/2348012345678?text=${message}`, '_blank');
   };
 
   const handleWhatsAppGeneral = () => {
     const message = encodeURIComponent("Hello, I have a question about Ethiopian Feast Forge...");
-    window.open(`https://wa.me/1234567890?text=${message}`, '_blank');
+    window.open(`https://wa.me/2348012345678?text=${message}`, '_blank');
   };
 
   const contactInfo = [
@@ -20,23 +20,23 @@ const Contact = () => {
       icon: MapPin,
       title: "Visit Us",
       content: [
-        "123 Main Street",
-        "Downtown, NY 10001",
-        "United States"
+        "15 Admiralty Way, Lekki Phase 1",
+        "Lagos, Nigeria",
+        "West Africa"
       ],
       action: "Get Directions",
-      actionUrl: "https://maps.google.com/?q=123+Main+Street+Downtown+NY+10001"
+      actionUrl: "https://maps.google.com/?q=15+Admiralty+Way+Lekki+Lagos+Nigeria"
     },
     {
       icon: Phone,
       title: "Call Us",
       content: [
-        "(555) 123-4567",
+        "+234 801 234 5678",
         "Available during business hours",
         "For reservations & inquiries"
       ],
       action: "Call Now",
-      actionUrl: "tel:+15551234567"
+      actionUrl: "tel:+2348012345678"
     },
     {
       icon: Mail,
@@ -74,7 +74,7 @@ const Contact = () => {
             </h1>
             <div className="w-24 h-1 bg-gradient-to-r from-primary to-spice-orange mx-auto rounded-full" />
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              We're located in the heart of downtown, ready to welcome you with authentic Ethiopian 
+              We're located in the vibrant Lekki area of Lagos, ready to welcome you with authentic Ethiopian 
               hospitality and cuisine. Come experience our warm atmosphere and traditional flavors.
             </p>
           </div>
@@ -184,29 +184,29 @@ const Contact = () => {
             <Card className="border-border bg-card/50 backdrop-blur-sm">
               <CardHeader>
                 <h3 className="text-2xl font-bold text-foreground">Find Us</h3>
-                <p className="text-muted-foreground">Located in the vibrant downtown area</p>
+                <p className="text-muted-foreground">Located in the vibrant Lekki area of Lagos</p>
               </CardHeader>
               <CardContent>
                 <div className="aspect-video bg-gradient-to-br from-muted to-accent/20 rounded-lg flex items-center justify-center border border-border">
-                  <div className="text-center space-y-4">
-                    <MapPin className="w-16 h-16 text-primary mx-auto" />
-                    <div>
-                      <h4 className="text-lg font-semibold text-foreground">Interactive Map</h4>
-                      <p className="text-muted-foreground mb-4">Click below to view our location in Google Maps</p>
-                      <Button
-                        asChild
-                        className="bg-primary hover:bg-primary/90 text-primary-foreground"
+                <div className="text-center space-y-4">
+                  <MapPin className="w-16 h-16 text-primary mx-auto" />
+                  <div>
+                    <h4 className="text-lg font-semibold text-foreground">Interactive Map</h4>
+                    <p className="text-muted-foreground mb-4">Click below to view our location in Google Maps</p>
+                    <Button
+                      asChild
+                      className="bg-primary hover:bg-primary/90 text-primary-foreground"
+                    >
+                      <a 
+                        href="https://maps.google.com/?q=15+Admiralty+Way+Lekki+Lagos+Nigeria" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
                       >
-                        <a 
-                          href="https://maps.google.com/?q=123+Main+Street+Downtown+NY+10001" 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                        >
-                          Open in Google Maps
-                        </a>
-                      </Button>
-                    </div>
+                        Open in Google Maps
+                      </a>
+                    </Button>
                   </div>
+                </div>
                 </div>
                 
                 <div className="mt-6 space-y-3 text-sm">
@@ -214,7 +214,7 @@ const Contact = () => {
                     <MapPin className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
                     <div>
                       <p className="font-medium text-foreground">Address</p>
-                      <p className="text-muted-foreground">123 Main Street, Downtown, NY 10001</p>
+                      <p className="text-muted-foreground">15 Admiralty Way, Lekki Phase 1, Lagos, Nigeria</p>
                     </div>
                   </div>
                   
@@ -225,7 +225,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-medium text-foreground text-xs">TRANSIT</p>
-                      <p className="text-muted-foreground text-xs">Metro accessible</p>
+                      <p className="text-muted-foreground text-xs">Uber/Bolt accessible</p>
                     </div>
                   </div>
                 </div>
@@ -242,7 +242,7 @@ const Contact = () => {
               <p className="text-muted-foreground mb-4">
                 At Ethiopian Feast Forge, we believe in the traditional Ethiopian value of hospitality - 
                 treating every guest like family. Whether you're new to Ethiopian cuisine or a longtime fan, 
-                our team is here to guide you through an authentic culinary journey.
+                our team is here to guide you through an authentic culinary journey in the heart of Lagos.
               </p>
               <p className="text-sm text-muted-foreground">
                 <strong>Group Events:</strong> We welcome large parties and special celebrations. 

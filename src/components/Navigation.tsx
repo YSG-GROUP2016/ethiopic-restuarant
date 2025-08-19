@@ -17,7 +17,7 @@ const Navigation = () => {
 
   const handleWhatsAppReservation = () => {
     const message = encodeURIComponent("Hello, I'd like to make a reservation for [X people] on [Date & Time].");
-    window.open(`https://wa.me/1234567890?text=${message}`, '_blank');
+    window.open(`https://wa.me/2348012345678?text=${message}`, '_blank');
   };
 
   return (
@@ -55,11 +55,11 @@ const Navigation = () => {
             <div className="flex items-center space-x-4 text-sm text-muted-foreground">
               <div className="flex items-center space-x-1">
                 <Phone className="w-4 h-4" />
-                <span>(555) 123-4567</span>
+                <span>+234 801 234 5678</span>
               </div>
               <div className="flex items-center space-x-1">
                 <MapPin className="w-4 h-4" />
-                <span>Downtown Location</span>
+                <span>Lekki, Lagos</span>
               </div>
             </div>
 
@@ -106,11 +106,11 @@ const Navigation = () => {
             <div className="px-3 py-2 space-y-2 text-sm text-muted-foreground border-t border-border mt-3 pt-3">
               <div className="flex items-center space-x-2">
                 <Phone className="w-4 h-4" />
-                <span>(555) 123-4567</span>
+                <span>+234 801 234 5678</span>
               </div>
               <div className="flex items-center space-x-2">
                 <MapPin className="w-4 h-4" />
-                <span>Downtown Location</span>
+                <span>Lekki, Lagos</span>
               </div>
             </div>
             

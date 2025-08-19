@@ -5,7 +5,7 @@ import heroImage from '@/assets/hero-image.jpg';
 const Hero = () => {
   const handleWhatsAppReservation = () => {
     const message = encodeURIComponent("Hello, I'd like to make a reservation for [X people] on [Date & Time].");
-    window.open(`https://wa.me/1234567890?text=${message}`, '_blank');
+    window.open(`https://wa.me/2348012345678?text=${message}`, '_blank');
   };
 
   return (

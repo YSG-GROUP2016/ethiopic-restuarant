@@ -10,7 +10,7 @@ const MenuPreview = () => {
       id: 1,
       name: "Doro Wat",
       description: "Ethiopia's national dish - tender chicken simmered in berbere sauce with hard-boiled eggs",
-      price: "$18.95",
+      price: "₦7,500",
       category: "Main Course",
       image: traditionalPlatter,
       spicy: true
@@ -19,7 +19,7 @@ const MenuPreview = () => {
       id: 2,
       name: "Ethiopian Coffee Ceremony",
       description: "Traditional coffee ceremony with three rounds of freshly roasted and brewed coffee",
-      price: "$12.95",
+      price: "₦5,200",
       category: "Beverages",
       image: coffeeCeremony,
       cultural: true
@@ -28,7 +28,7 @@ const MenuPreview = () => {
       id: 3,
       name: "Vegetarian Combination",
       description: "Assorted vegetarian dishes including shiro, gomen, and misir served on injera",
-      price: "$16.95",
+      price: "₦6,800",
       category: "Vegetarian",
       image: traditionalPlatter,
       vegetarian: true

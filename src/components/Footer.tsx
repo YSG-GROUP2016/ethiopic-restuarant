@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 const Footer = () => {
   const handleWhatsAppReservation = () => {
     const message = encodeURIComponent("Hello, I'd like to make a reservation for [X people] on [Date & Time].");
-    window.open(`https://wa.me/1234567890?text=${message}`, '_blank');
+    window.open(`https://wa.me/2348012345678?text=${message}`, '_blank');
   };
 
   const socialLinks = [
@@ -31,10 +31,10 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-spice-orange mt-1 flex-shrink-0" />
                 <div>
-                  <p className="font-medium">Downtown Location</p>
+                  <p className="font-medium">Lekki Location</p>
                   <p className="text-injera-beige text-sm">
-                    123 Main Street<br />
-                    Downtown, NY 10001
+                    15 Admiralty Way, Lekki Phase 1<br />
+                    Lagos, Nigeria
                   </p>
                 </div>
               </div>
@@ -42,7 +42,7 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-spice-orange" />
                 <div>
-                  <p className="font-medium">(555) 123-4567</p>
+                  <p className="font-medium">+234 801 234 5678</p>
                   <p className="text-injera-beige text-sm">Call for reservations</p>
                 </div>
               </div>
