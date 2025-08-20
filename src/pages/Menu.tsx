@@ -262,12 +262,6 @@ const Menu = () => {
                     )}
                   </div>
 
-                  {/* Price */}
-                  <div className="absolute bottom-4 right-4">
-                    <span className="bg-background/95 text-foreground px-4 py-2 rounded-full font-bold text-lg shadow-lg">
-                      {item.price}
-                    </span>
-                  </div>
                 </div>
 
                 <CardHeader className="pb-3">
@@ -277,14 +271,9 @@ const Menu = () => {
                 </CardHeader>
 
                 <CardContent>
-                  <p className="text-muted-foreground leading-relaxed mb-6">
+                  <p className="text-muted-foreground leading-relaxed">
                     {item.description}
                   </p>
-                  <Button 
-                    className="w-full bg-gradient-to-r from-primary to-spice-orange hover:from-primary/90 hover:to-spice-orange/90 text-white font-semibold transition-all duration-300"
-                  >
-                    Add to Order
-                  </Button>
                 </CardContent>
               </Card>
             ))}

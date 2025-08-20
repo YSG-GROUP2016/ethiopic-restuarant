@@ -88,12 +88,6 @@ const MenuPreview = () => {
                   )}
                 </div>
 
-                {/* Price */}
-                <div className="absolute bottom-4 right-4">
-                  <span className="bg-background/90 text-foreground px-3 py-1 rounded-full font-bold text-lg">
-                    {item.price}
-                  </span>
-                </div>
               </div>
 
               <CardHeader className="pb-3">
@@ -110,15 +104,9 @@ const MenuPreview = () => {
               </CardHeader>
 
               <CardContent>
-                <p className="text-muted-foreground leading-relaxed mb-4">
+                <p className="text-muted-foreground leading-relaxed">
                   {item.description}
                 </p>
-                <Button 
-                  variant="outline" 
-                  className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
-                >
-                  Add to Order
-                </Button>
               </CardContent>
             </Card>
           ))}
