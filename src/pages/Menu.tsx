@@ -7,10 +7,11 @@ import Footer from '@/components/Footer';
 import traditionalPlatter from '@/assets/traditional-platter.jpg';
 import coffeeCeremony from '@/assets/coffee-ceremony.jpg';
 import vegetarianCombo from '@/assets/vegetarian-combo.jpg';
-import beefTibs from '@/assets/beef-tibs.jpg';
+import beefTibs from '@/assets/beef-tibs-pinterest.jpg';
 import doroWat from '@/assets/doro-wat.jpg';
 import sambusa from '@/assets/sambusa.jpg';
 import honeyCake from '@/assets/honey-cake.jpg';
+import ethiopianPlatter from '@/assets/ethiopian-platter-pinterest.jpg';
 
 const Menu = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -99,7 +100,7 @@ const Menu = () => {
       description: "Assorted vegetarian dishes including shiro, gomen, misir, and other seasonal vegetables",
       price: "₦6,800",
       category: "vegetarian",
-      image: vegetarianCombo,
+      image: ethiopianPlatter,
       vegetarian: true,
       popular: true,
     },

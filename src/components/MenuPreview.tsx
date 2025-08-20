@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import traditionalPlatter from '@/assets/traditional-platter.jpg';
 import coffeeCeremony from '@/assets/coffee-ceremony.jpg';
 import doroWat from '@/assets/doro-wat.jpg';
-import vegetarianCombo from '@/assets/vegetarian-combo.jpg';
+import ethiopianPlatter from '@/assets/ethiopian-platter-pinterest.jpg';
 
 const MenuPreview = () => {
   const featuredItems = [
@@ -32,7 +32,7 @@ const MenuPreview = () => {
       description: "Assorted vegetarian dishes including shiro, gomen, and misir served on injera",
       price: "₦6,800",
       category: "Vegetarian",
-      image: vegetarianCombo,
+      image: ethiopianPlatter,
       vegetarian: true
     }
   ];
