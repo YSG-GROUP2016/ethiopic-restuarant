@@ -3,6 +3,8 @@ import { Card, CardHeader, CardContent } from '@/components/ui/card';
 import { Link } from 'react-router-dom';
 import traditionalPlatter from '@/assets/traditional-platter.jpg';
 import coffeeCeremony from '@/assets/coffee-ceremony.jpg';
+import doroWat from '@/assets/doro-wat.jpg';
+import vegetarianCombo from '@/assets/vegetarian-combo.jpg';
 
 const MenuPreview = () => {
   const featuredItems = [
@@ -12,7 +14,7 @@ const MenuPreview = () => {
       description: "Ethiopia's national dish - tender chicken simmered in berbere sauce with hard-boiled eggs",
       price: "₦7,500",
       category: "Main Course",
-      image: traditionalPlatter,
+      image: doroWat,
       spicy: true
     },
     {
@@ -30,7 +32,7 @@ const MenuPreview = () => {
       description: "Assorted vegetarian dishes including shiro, gomen, and misir served on injera",
       price: "₦6,800",
       category: "Vegetarian",
-      image: traditionalPlatter,
+      image: vegetarianCombo,
       vegetarian: true
     }
   ];

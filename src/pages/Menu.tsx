@@ -6,6 +6,11 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import traditionalPlatter from '@/assets/traditional-platter.jpg';
 import coffeeCeremony from '@/assets/coffee-ceremony.jpg';
+import vegetarianCombo from '@/assets/vegetarian-combo.jpg';
+import beefTibs from '@/assets/beef-tibs.jpg';
+import doroWat from '@/assets/doro-wat.jpg';
+import sambusa from '@/assets/sambusa.jpg';
+import honeyCake from '@/assets/honey-cake.jpg';
 
 const Menu = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -27,7 +32,7 @@ const Menu = () => {
       description: "Crispy pastry filled with lentils, onions, and jalapeños, served with spicy dipping sauce",
       price: "₦3,500",
       category: "starters",
-      image: traditionalPlatter,
+      image: sambusa,
       vegetarian: true,
       spicy: true,
     },
@@ -57,7 +62,7 @@ const Menu = () => {
       description: "Ethiopia's national dish - tender chicken simmered in berbere sauce with hard-boiled eggs",
       price: "₦7,500",
       category: "mains",
-      image: traditionalPlatter,
+      image: doroWat,
       spicy: true,
       popular: true,
     },
@@ -67,7 +72,7 @@ const Menu = () => {
       description: "Sautéed beef cubes with onions, peppers, and aromatic Ethiopian spices",
       price: "₦7,200",
       category: "mains",
-      image: traditionalPlatter,
+      image: beefTibs,
     },
     {
       id: 6,
@@ -94,7 +99,7 @@ const Menu = () => {
       description: "Assorted vegetarian dishes including shiro, gomen, misir, and other seasonal vegetables",
       price: "₦6,800",
       category: "vegetarian",
-      image: traditionalPlatter,
+      image: vegetarianCombo,
       vegetarian: true,
       popular: true,
     },
@@ -154,7 +159,7 @@ const Menu = () => {
       description: "Traditional Ethiopian cake made with tej (honey wine) and aromatic spices",
       price: "₦3,200",
       category: "desserts",
-      image: coffeeCeremony,
+      image: honeyCake,
     },
     {
       id: 15,
