@@ -27,11 +27,11 @@ const Navigation = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <div className="w-10 h-10 bg-gradient-to-br from-primary to-spice-orange rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">EF</span>
+              <span className="text-primary-foreground font-bold text-lg">H&T</span>
             </div>
             <div className="hidden sm:block">
-              <h1 className="text-xl font-bold text-foreground">Ethiopian Feast Forge</h1>
-              <p className="text-xs text-muted-foreground">Authentic Ethiopian Cuisine</p>
+              <h1 className="text-xl font-bold text-foreground">H&T Ethiopian Restaurant</h1>
+              <p className="text-xs text-muted-foreground">@ the centre of Lagos</p>
             </div>
           </Link>
 

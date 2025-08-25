@@ -53,9 +53,9 @@ const Footer = () => {
           {/* Restaurant Info */}
           <div className="space-y-6">
             <div>
-              <h3 className="text-2xl font-bold mb-2">Ethiopian Feast Forge</h3>
+              <h3 className="text-2xl font-bold mb-2">H&T Ethiopian Restaurant</h3>
               <p className="text-injera-beige">
-                Authentic Ethiopian cuisine in the heart of the city
+                Authentic Ethiopian cuisine @ the centre of Lagos
               </p>
             </div>
             
@@ -183,7 +183,7 @@ const Footer = () => {
         <div className="mt-12 pt-8 border-t border-white/20">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="flex items-center space-x-2 text-injera-beige text-sm">
-              <span>© 2024 Ethiopian Feast Forge. All rights reserved.</span>
+              <span>© 2024 H&T Ethiopian Restaurant. All rights reserved.</span>
             </div>
             
             <div className="flex items-center space-x-2 text-injera-beige text-sm">

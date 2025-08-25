@@ -30,8 +30,8 @@ const Hero = () => {
                 እንኳን ደህና መጡ - Welcome!
               </p>
               <h1 className="text-5xl lg:text-7xl font-bold text-foreground leading-tight">
-                Ethiopian
-                <span className="block text-primary">Feast Forge</span>
+                H&T Ethiopian
+                <span className="block text-primary">Restaurant</span>
               </h1>
               <div className="w-24 h-1 bg-gradient-to-r from-primary to-spice-orange mx-auto lg:mx-0 rounded-full" />
             </div>
