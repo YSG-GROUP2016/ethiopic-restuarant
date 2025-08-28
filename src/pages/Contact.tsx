@@ -7,12 +7,17 @@ import Footer from '@/components/Footer';
 const Contact = () => {
   const handleWhatsAppReservation = () => {
     const message = encodeURIComponent("Hello, I'd like to make a reservation for [X people] on [Date & Time].");
-    window.open(`https://wa.me/2348012345678?text=${message}`, '_blank');
+    window.open(`https://wa.me/2348170339432?text=${message}`, '_blank');
   };
 
   const handleWhatsAppGeneral = () => {
+<<<<<<< HEAD
     const message = encodeURIComponent("Hello, I have a question about H&T Ethiopian Restaurant @ the centre of Lagos...");
     window.open(`https://wa.me/2348012345678?text=${message}`, '_blank');
+=======
+    const message = encodeURIComponent("Hello, I have a question about H&T Ethiopian Restaurant...");
+    window.open(`https://wa.me/2347063945538?text=${message}`, '_blank');
+>>>>>>> e2370b0ac4c71ba4e2cd736e313afbab2ff16b79
   };
 
   const contactInfo = [
@@ -31,12 +36,12 @@ const Contact = () => {
       icon: Phone,
       title: "Call Us",
       content: [
-        "+234 801 234 5678",
+        "+234 706 394 5538",
         "Available during business hours",
         "For reservations & inquiries"
       ],
       action: "Call Now",
-      actionUrl: "tel:+2348012345678"
+      actionUrl: "tel:+2347063945538"
     },
     {
       icon: Mail,
