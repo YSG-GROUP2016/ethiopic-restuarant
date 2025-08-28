@@ -11,7 +11,7 @@ const Contact = () => {
   };
 
   const handleWhatsAppGeneral = () => {
-    const message = encodeURIComponent("Hello, I have a question about Ethiopian Feast Forge...");
+    const message = encodeURIComponent("Hello, I have a question about H&T Ethiopian Restaurant @ the centre of Lagos...");
     window.open(`https://wa.me/2348012345678?text=${message}`, '_blank');
   };
 
@@ -66,7 +66,7 @@ const Contact = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-6 animate-fade-in-up">
             <p className="text-spice-orange font-medium text-lg">
-              እንኳን ደህና መጡ - Contact Us
+                Contact Us
             </p>
             <h1 className="text-5xl lg:text-6xl font-bold text-foreground">
               Visit Ethiopian
@@ -240,7 +240,7 @@ const Contact = () => {
                 🇪🇹 Ethiopian Hospitality Awaits
               </h3>
               <p className="text-muted-foreground mb-4">
-                At Ethiopian Feast Forge, we believe in the traditional Ethiopian value of hospitality - 
+                At H&T Ethiopian Restaurant @ the centre of Lagos, we believe in the traditional Ethiopian value of hospitality - 
                 treating every guest like family. Whether you're new to Ethiopian cuisine or a longtime fan, 
                 our team is here to guide you through an authentic culinary journey in the heart of Lagos.
               </p>
