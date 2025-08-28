@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Phone, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import htLogo from '@/assets/ht-ethiopian-logo.png';
+import htLogo from '@/assets/logo.jpg';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
