@@ -69,16 +69,16 @@ const Hero = () => {
             {/* Features */}
             <div className="grid grid-cols-3 gap-6 pt-8 border-t border-border">
               <div className="text-center lg:text-left">
-                <h3 className="font-semibold text-lg text-foreground">Traditional</h3>
-                <p className="text-sm text-muted-foreground">Authentic recipes passed down through generations</p>
+                <h3 className="font-semibold text-white/90 text-foreground">Traditional</h3>
+                <p className="text-sm text-muted-foreground text-white/90">Authentic recipes passed down through generations</p>
               </div>
               <div className="text-center lg:text-left">
-                <h3 className="font-semibold text-lg text-foreground">Fresh</h3>
-                <p className="text-sm text-muted-foreground">Daily prepared with the finest ingredients</p>
+                <h3 className="font-semibold text-white/90 text-foreground">Fresh</h3>
+                <p className="text-sm text-muted-foreground text-white/90">Daily prepared with the finest ingredients</p>
               </div>
               <div className="text-center lg:text-left">
-                <h3 className="font-semibold text-lg text-foreground">Cultural</h3>
-                <p className="text-sm text-muted-foreground">Immersive dining experience with coffee ceremony</p>
+                <h3 className="font-semibold text-white/90 text-foreground">Cultural</h3>
+                <p className="text-sm text-muted-foreground text-white/90">Immersive dining experience with coffee ceremony</p>
               </div>
             </div>
           </div>

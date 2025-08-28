@@ -5,11 +5,19 @@ import { Badge } from '@/components/ui/badge';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import traditionalPlatter from '@/assets/traditional-platter.jpg';
-import coffeeCeremony from '@/assets/coffee-ceremony.jpg';
+import coffeeCeremony from '@/assets/coffee.jpg';
+import fish from '@/assets/fish.jpg'
+import shiro from '@/assets/shiro-wat.jpg';
+import Tej from '@/assets/Tej.jpg';
+import lamb from '@/assets/lamb.jpeg';
+import bak from '@/assets/bak.jpg';
+import kitfo from '@/assets/kitfo.jpg';
 import vegetarianCombo from '@/assets/vegetarian-combo.jpg';
 import beefTibs from '@/assets/beef-tibs-pinterest.jpg';
-import doroWat from '@/assets/doro-wat.jpg';
+import doroWat from '@/assets/doro-wat1.jpg';
+import gomen from '@/assets/gomen.jpg';
 import sambusa from '@/assets/sambusa.jpg';
+import fresh from '@/assets/Fresh-mango.jpg';
 import honeyCake from '@/assets/honey-cake.jpg';
 import ethiopianPlatter from '@/assets/ethiopian-platter-pinterest.jpg';
 
@@ -43,7 +51,7 @@ const Menu = () => {
       description: "Ethiopian steak tartare seasoned with mitmita spice and served with injera",
       price: "₦6,800",
       category: "starters",
-      image: traditionalPlatter,
+      image: kitfo,
       spicy: true,
     },
     {
@@ -81,7 +89,7 @@ const Menu = () => {
       description: "Fresh fish prepared kitfo style with traditional Ethiopian spices",
       price: "₦8,000",
       category: "mains",
-      image: traditionalPlatter,
+      image: fish,
     },
     {
       id: 7,
@@ -89,7 +97,7 @@ const Menu = () => {
       description: "Tender lamb slow-cooked in rich berbere sauce with onions and garlic",
       price: "₦8,500",
       category: "mains",
-      image: traditionalPlatter,
+      image: lamb,
       spicy: true,
     },
 
@@ -110,7 +118,7 @@ const Menu = () => {
       description: "Ground chickpea stew simmered in berbere sauce - a beloved Ethiopian comfort food",
       price: "₦6,000",
       category: "vegetarian",
-      image: traditionalPlatter,
+      image: shiro,
       vegetarian: true,
       spicy: true,
     },
@@ -120,7 +128,7 @@ const Menu = () => {
       description: "Fresh collard greens sautéed with garlic, ginger, and traditional Ethiopian spices",
       price: "₦5,200",
       category: "vegetarian",
-      image: traditionalPlatter,
+      image: gomen,
       vegetarian: true,
     },
 
@@ -141,7 +149,7 @@ const Menu = () => {
       description: "Traditional fermented honey wine with a sweet, wine-like flavor - served in traditional glass",
       price: "₦3,600",
       category: "beverages",
-      image: coffeeCeremony,
+      image: Tej,
       cultural: true,
     },
     {
@@ -150,7 +158,7 @@ const Menu = () => {
       description: "Freshly squeezed mango juice - perfect complement to spicy Ethiopian dishes",
       price: "₦2,000",
       category: "beverages",
-      image: coffeeCeremony,
+      image: fresh,
     },
 
     // Desserts
@@ -168,7 +176,7 @@ const Menu = () => {
       description: "Flaky pastry layered with honey, nuts, and Ethiopian spices",
       price: "₦2,800",
       category: "desserts",
-      image: coffeeCeremony,
+      image: bak,
     },
   ];
 

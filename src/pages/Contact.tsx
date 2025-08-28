@@ -11,13 +11,8 @@ const Contact = () => {
   };
 
   const handleWhatsAppGeneral = () => {
-<<<<<<< HEAD
-    const message = encodeURIComponent("Hello, I have a question about H&T Ethiopian Restaurant @ the centre of Lagos...");
+    const message = encodeURIComponent("Hello, I have a question about H&T Ethiopian Restaurant @ the centre of Lagos...");
     window.open(`https://wa.me/2348012345678?text=${message}`, '_blank');
-=======
-    const message = encodeURIComponent("Hello, I have a question about H&T Ethiopian Restaurant...");
-    window.open(`https://wa.me/2347063945538?text=${message}`, '_blank');
->>>>>>> e2370b0ac4c71ba4e2cd736e313afbab2ff16b79
   };
 
   const contactInfo = [

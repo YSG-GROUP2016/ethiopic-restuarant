@@ -2,8 +2,8 @@ import { Button } from '@/components/ui/button';
 import { Card, CardHeader, CardContent } from '@/components/ui/card';
 import { Link } from 'react-router-dom';
 import traditionalPlatter from '@/assets/traditional-platter.jpg';
-import coffeeCeremony from '@/assets/coffee-ceremony.jpg';
-import doroWat from '@/assets/doro-wat.jpg';
+import coffeeCeremony from '@/assets/coffee.jpg';
+import doroWat from '@/assets/doro-wat1.jpg';
 import ethiopianPlatter from '@/assets/ethiopian-platter-pinterest.jpg';
 
 const MenuPreview = () => {
