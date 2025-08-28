@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 const Footer = () => {
   const handleWhatsAppReservation = () => {
     const message = encodeURIComponent("Hello, I'd like to make a reservation for [X people] on [Date & Time].");
-    window.open(`https://wa.me/2348012345678?text=${message}`, '_blank');
+    window.open(`https://wa.me/2348170339432?text=${message}`, '_blank');
   };
   const socialLinks = [{
     name: 'Facebook',
@@ -57,7 +57,7 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-spice-orange" />
                 <div>
-                  <p className="font-medium">+234 801 234 5678</p>
+                  <p className="font-medium">+234 706 394 5538</p>
                   <p className="text-injera-beige text-sm">Call for reservations</p>
                 </div>
               </div>
