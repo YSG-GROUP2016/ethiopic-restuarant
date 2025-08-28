@@ -155,7 +155,7 @@ const Footer = () => {
           </div>
           
           <div className="mt-4 text-center">
-            <p className="text-injera-beige text-xs">designed by codedfingers</p>
+            <p className="text-injera-beige text-xs">designed by Tsquare</p>
           </div>
         </div>
       </div>

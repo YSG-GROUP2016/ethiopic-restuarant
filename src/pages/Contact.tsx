@@ -42,12 +42,12 @@ const Contact = () => {
       icon: Mail,
       title: "Email Us",
       content: [
-        "info@ethiopianfeastforge.com",
+        "Info@Habesha.com",
         "General inquiries & feedback",
         "We respond within 24 hours"
       ],
       action: "Send Email",
-      actionUrl: "mailto:info@ethiopianfeastforge.com"
+      actionUrl: "mailto:Info@Habesha.com"
     }
   ];
 
@@ -69,8 +69,8 @@ const Contact = () => {
                 Contact Us
             </p>
             <h1 className="text-5xl lg:text-6xl font-bold text-foreground">
-              Visit Ethiopian
-              <span className="block text-primary">Feast Forge</span>
+              Visit H&T Ethiopian Restaurant
+              <span className="block text-primary"> @ the centre of Lagos</span>
             </h1>
             <div className="w-24 h-1 bg-gradient-to-r from-primary to-spice-orange mx-auto rounded-full" />
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
