@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Phone, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import htLogo from '@/assets/ht-ethiopian-logo.png';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,13 +22,17 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+    <nav className="sticky top-0 z-50 bg-gradient-to-r from-tertiary via-secondary to-primary/90 backdrop-blur-sm border-b border-border shadow-warm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-primary to-spice-orange rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">H&T</span>
+          <Link to="/" className="flex items-center space-x-3">
+            <div className="w-12 h-12 bg-white rounded-full p-1 shadow-warm">
+              <img 
+                src={htLogo} 
+                alt="H&T Ethiopian Restaurant Logo" 
+                className="w-full h-full object-contain rounded-full"
+              />
             </div>
             <div className="hidden sm:block">
               <h1 className="text-xl font-bold text-foreground">H&T Ethiopian Restaurant</h1>

@@ -5,11 +5,11 @@ import heroImage from '@/assets/hero-image.jpg';
 const Hero = () => {
   const handleWhatsAppReservation = () => {
     const message = encodeURIComponent("Hello, I'd like to make a reservation for [X people] on [Date & Time].");
-    window.open(`https://wa.me/2348012345678?text=${message}`, '_blank');
+    window.open(`https://wa.me/2348170339432?text=${message}`, '_blank');
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-tertiary/10 via-secondary/10 to-primary/10">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
@@ -17,7 +17,7 @@ const Hero = () => {
           alt="Traditional Ethiopian food spread"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/60 to-background/30" />
+        <div className="absolute inset-0 bg-gradient-to-r from-tertiary/70 via-secondary/40 to-primary/70" />
       </div>
 
       {/* Content */}
@@ -26,23 +26,23 @@ const Hero = () => {
           <div className="space-y-8 animate-fade-in-up">
             {/* Traditional Welcome */}
             <div className="space-y-2">
-              <p className="text-spice-orange font-medium text-lg">
+              <p className="text-secondary font-medium text-lg drop-shadow-md">
                 እንኳን ደህና መጡ - Welcome!
               </p>
-              <h1 className="text-5xl lg:text-7xl font-bold text-foreground leading-tight">
+              <h1 className="text-5xl lg:text-7xl font-bold text-white leading-tight drop-shadow-lg">
                 H&T Ethiopian
-                <span className="block text-primary">Restaurant</span>
+                <span className="block text-secondary">Restaurant</span>
               </h1>
-              <div className="w-24 h-1 bg-gradient-to-r from-primary to-spice-orange mx-auto lg:mx-0 rounded-full" />
+              <div className="w-24 h-1 bg-gradient-to-r from-secondary to-primary mx-auto lg:mx-0 rounded-full" />
             </div>
 
             {/* Description */}
             <div className="space-y-4 max-w-xl mx-auto lg:mx-0">
-              <p className="text-xl text-muted-foreground leading-relaxed">
+              <p className="text-xl text-white/90 leading-relaxed drop-shadow-md">
                 Experience the rich flavors and ancient traditions of Ethiopia. 
                 From our traditional coffee ceremony to our signature injera and stews.
               </p>
-              <p className="text-lg text-muted-foreground">
+              <p className="text-lg text-white/80 drop-shadow-md">
                 Join us for an authentic culinary journey through the heart of East Africa.
               </p>
             </div>
