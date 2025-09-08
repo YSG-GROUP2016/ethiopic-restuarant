@@ -64,8 +64,10 @@ const MenuPreview = () => {
               <div className="relative overflow-hidden">
                 <img
                   src={item.image}
-                  alt={item.name}
+                  alt={`${item.name} - Traditional Ethiopian ${item.category} dish served at H&T Ethiopian Restaurant`}
                   className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent" />
                 

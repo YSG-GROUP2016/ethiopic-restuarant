@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import SEO from '@/components/SEO';
 import traditionalPlatter from '@/assets/traditional-platter.jpg';
 import coffeeCeremony from '@/assets/coffee.jpg';
 import fish from '@/assets/fish.jpg'
@@ -185,8 +186,15 @@ const Menu = () => {
     : menuItems.filter(item => item.category === selectedCategory);
 
   return (
-    <div className="min-h-screen bg-background">
-      <Navigation />
+    <>
+      <SEO 
+        title="Menu - H&T Ethiopian Restaurant | Authentic Ethiopian Dishes in Lagos"
+        description="Explore our authentic Ethiopian menu featuring traditional dishes like Doro Wat, Injera, Shiro, and more. Fresh ingredients, traditional recipes, and vegetarian options available in Lagos."
+        keywords="ethiopian menu lagos, doro wat, injera, shiro, kitfo, ethiopian vegetarian food, traditional ethiopian dishes, african cuisine menu"
+        type="website"
+      />
+      <div className="min-h-screen bg-background">
+        <Navigation />
       
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-b from-muted/30 to-background">
@@ -242,8 +250,10 @@ const Menu = () => {
                 <div className="relative overflow-hidden">
                   <img
                     src={item.image}
-                    alt={item.name}
+                    alt={`${item.name} - Traditional Ethiopian ${item.category.toLowerCase()}`}
                     className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+                    loading="lazy"
+                    decoding="async"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
                   
@@ -307,8 +317,34 @@ const Menu = () => {
         </div>
       </section>
 
+      {/* About Section */}
+      <section className="py-16 bg-gradient-to-r from-primary/5 to-spice-orange/5">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl font-bold text-foreground mb-6">
+            About Our Ethiopian Cuisine
+          </h2>
+          <div className="grid md:grid-cols-2 gap-8 text-left">
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold text-primary">Traditional Preparation</h3>
+              <p className="text-muted-foreground">
+                All our dishes are prepared using authentic Ethiopian recipes and techniques, 
+                with spices imported directly from Ethiopia to ensure the most genuine flavors.
+              </p>
+            </div>
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold text-primary">Dietary Options</h3>
+              <p className="text-muted-foreground">
+                We offer extensive vegetarian and vegan options, following the Ethiopian Orthodox 
+                tradition of fasting foods that are naturally plant-based and full of flavor.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </div>
+    </>
   );
 };
 

@@ -14,8 +14,10 @@ const Hero = () => {
       <div className="absolute inset-0 z-0">
         <img
           src={heroImage}
-          alt="Traditional Ethiopian food spread"
+          alt="Traditional Ethiopian food spread at H&T Ethiopian Restaurant showing authentic dishes and injera bread"
           className="w-full h-full object-cover"
+          loading="eager"
+          decoding="async"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-tertiary/70 via-secondary/40 to-primary/70" />
       </div>
