@@ -181,36 +181,41 @@ const Contact = () => {
               </CardContent>
             </Card>
 
-            {/* Google Maps Placeholder */}
+            {/* Google Maps */}
             <Card className="border-border bg-card/50 backdrop-blur-sm">
               <CardHeader>
                 <h3 className="text-2xl font-bold text-foreground">Find Us</h3>
                 <p className="text-muted-foreground">Located in the vibrant Lekki area of Lagos</p>
               </CardHeader>
               <CardContent>
-                <div className="aspect-video bg-gradient-to-br from-muted to-accent/20 rounded-lg flex items-center justify-center border border-border">
-                <div className="text-center space-y-4">
-                  <MapPin className="w-16 h-16 text-primary mx-auto" />
-                  <div>
-                    <h4 className="text-lg font-semibold text-foreground">Interactive Map</h4>
-                    <p className="text-muted-foreground mb-4">Click below to view our location in Google Maps</p>
-                    <Button
-                      asChild
-                      className="bg-primary hover:bg-primary/90 text-primary-foreground"
+                <div className="aspect-video bg-muted rounded-lg overflow-hidden border border-border mb-4">
+                  <iframe
+                    src="https://maps.google.com/maps?q=15%20Admiralty%20Way%2C%20Lekki%20Phase%201%2C%20Lagos%2C%20Nigeria&output=embed"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen=""
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="H&T Ethiopian Restaurant Location"
+                  ></iframe>
+                </div>
+
+                <div className="space-y-3">
+                  <Button
+                    asChild
+                    className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
+                  >
+                    <a
+                      href="https://maps.google.com/?q=15+Admiralty+Way+Lekki+Lagos+Nigeria"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
-                      <a 
-                        href="https://maps.google.com/?q=15+Admiralty+Way+Lekki+Lagos+Nigeria" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                      >
-                        Open in Google Maps
-                      </a>
-                    </Button>
-                  </div>
-                </div>
-                </div>
-                
-                <div className="mt-6 space-y-3 text-sm">
+                      <MapPin className="w-4 h-4 mr-2" />
+                      Get Directions in Google Maps
+                    </a>
+                  </Button>
+
                   <div className="flex items-start space-x-3">
                     <MapPin className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
                     <div>
@@ -218,7 +223,7 @@ const Contact = () => {
                       <p className="text-muted-foreground">15 Admiralty Way, Lekki Phase 1, Lagos, Nigeria</p>
                     </div>
                   </div>
-                  
+
                   <div className="grid grid-cols-2 gap-4 pt-3 border-t border-border">
                     <div>
                       <p className="font-medium text-foreground text-xs">PARKING</p>
