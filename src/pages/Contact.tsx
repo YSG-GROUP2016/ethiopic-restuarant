@@ -71,7 +71,7 @@ const Contact = () => {
             </p>
             <h1 className="text-5xl lg:text-6xl font-bold text-foreground">
               Visit H&T Ethiopian Restaurant
-              <span className="block text-primary"> @ the centre of Lagos</span>
+              <span className="block text-primary"> @ the centre of Lagos</span>
             </h1>
             <div className="w-24 h-1 bg-gradient-to-r from-primary to-spice-orange mx-auto rounded-full" />
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
@@ -241,7 +241,7 @@ const Contact = () => {
                 🇪🇹 Ethiopian Hospitality Awaits
               </h3>
               <p className="text-muted-foreground mb-4">
-                At H&T Ethiopian Restaurant @ the centre of Lagos, we believe in the traditional Ethiopian value of hospitality - 
+                At H&T Ethiopian Restaurant @ the centre of Lagos, we believe in the traditional Ethiopian value of hospitality - 
                 treating every guest like family. Whether you're new to Ethiopian cuisine or a longtime fan, 
                 our team is here to guide you through an authentic culinary journey in the heart of Lagos.
               </p>
