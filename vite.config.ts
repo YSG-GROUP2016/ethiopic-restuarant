@@ -4,10 +4,10 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  // Use the project base path for production builds (deployed site).
-  // During local development use `/` so the dev server is reachable at root
+  // GitHub Pages hosts at /ethiopic-restuarant/ (repo name).
+  // Use `/` during local development so the dev server is reachable at root
   // (useful when previewing through Codespaces / forwarded ports).
-  base: mode === 'production' ? '/ethiopic-feast-forge/' : '/',
+  base: mode === 'production' ? '/ethiopic-restuarant/' : '/',
   server: {
     host: "::",
     port: 8080,
