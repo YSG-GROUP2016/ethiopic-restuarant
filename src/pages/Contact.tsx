@@ -58,6 +58,30 @@ const Contact = () => {
     { day: "Sunday", hours: "12:00 PM - 9:00 PM" },
   ];
 
+  const openGoogleDirections = (origin?: string) => {
+    const destination = encodeURIComponent(
+      '15 Admiralty Way, Lekki Phase 1, Lagos, Nigeria'
+    );
+    let url = `https://www.google.com/maps/dir/?api=1&destination=${destination}`;
+    if (origin) url += `&origin=${encodeURIComponent(origin)}`;
+    window.open(url, '_blank');
+  };
+
+  const handleGetDirections = () => {
+    if (!navigator.geolocation) {
+      openGoogleDirections();
+      return;
+    }
+
+    navigator.geolocation.getCurrentPosition(
+      (pos) => {
+        const { latitude, longitude } = pos.coords;
+        openGoogleDirections(`${latitude},${longitude}`);
+      },
+      () => openGoogleDirections()
+    );
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
@@ -203,17 +227,11 @@ const Contact = () => {
 
                 <div className="space-y-3">
                   <Button
-                    asChild
                     className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
+                    onClick={handleGetDirections}
                   >
-                    <a
-                      href="https://maps.google.com/?q=15+Admiralty+Way+Lekki+Lagos+Nigeria"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <MapPin className="w-4 h-4 mr-2" />
-                      Get Directions in Google Maps
-                    </a>
+                    <MapPin className="w-4 h-4 mr-2" />
+                    Get Directions in Google Maps
                   </Button>
 
                   <div className="flex items-start space-x-3">
