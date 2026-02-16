@@ -47,7 +47,7 @@ const Reservations: React.FC = () => {
 
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-6 bg-card border border-border/50 p-8 rounded-xl shadow-sm">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <label className="block text-sm font-semibold text-foreground mb-2">Full Name *</label>
               <Input 
@@ -115,15 +115,16 @@ const Reservations: React.FC = () => {
             />
           </div>
 
-          <div className="flex justify-end gap-3 pt-4 border-t border-border/30">
-            <Button 
-              type="submit" 
-              className="bg-primary hover:bg-primary/90 text-white font-semibold px-8"
-            >
-              Complete Reservation
-            </Button>
-          </div>
-        </form>
+            <div className="flex justify-end gap-3 pt-4 border-t border-border/30">
+              <Button 
+                type="submit" 
+                className="bg-primary hover:bg-primary/90 text-white font-semibold px-8"
+              >
+                Complete Reservation
+              </Button>
+            </div>
+          </form>
+        </div>
       </main>
 
       <Footer />
