@@ -30,43 +30,42 @@ const Footer = () => {
           <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
         </svg>
   }];
-  return <footer className="bg-gradient-to-b from-earth-brown to-coffee-brown text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+  return <footer className="bg-gradient-to-b from-coffee-dark to-card border-t border-border/50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-foreground">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Restaurant Info */}
           <div className="space-y-6">
             <div>
-              <h3 className="text-2xl font-bold mb-2">H&T Ethiopian Restaurant</h3>
-              <p className="text-injera-beige">
-                Authentic Ethiopian cuisine @ the centre of Lagos
+              <h3 className="text-2xl font-bold mb-2 text-white">H&T Ethiopian</h3>
+              <p className="text-white/70 text-sm font-medium">
+                Authentic Ethiopian cuisine at the centre of Lagos
               </p>
             </div>
             
-            <div className="space-y-3">
-              <div className="flex items-start space-x-3">
-                <MapPin className="w-5 h-5 text-spice-orange mt-1 flex-shrink-0" />
+            <div className="space-y-4">
+              <div className="flex items-start space-x-3 group cursor-pointer">
+                <MapPin className="w-5 h-5 text-accent flex-shrink-0 mt-0.5 group-hover:text-secondary transition-colors" />
                 <div>
-                  <p className="font-medium">Lekki Location</p>
-                  <p className="text-injera-beige text-sm">
-                    15 Admiralty Way, Lekki Phase 1<br />
-                    Lagos, Nigeria
+                  <p className="font-semibold text-white text-sm">Location</p>
+                  <p className="text-white/60 text-xs mt-1">
+                    15 Admiralty Way, Lekki Phase 1, Lagos
                   </p>
                 </div>
               </div>
               
-              <div className="flex items-center space-x-3">
-                <Phone className="w-5 h-5 text-spice-orange" />
+              <div className="flex items-center space-x-3 group cursor-pointer">
+                <Phone className="w-5 h-5 text-accent group-hover:text-secondary transition-colors" />
                 <div>
-                  <p className="font-medium">+234 706 394 5538</p>
-                  <p className="text-injera-beige text-sm">Call for reservations</p>
+                  <p className="font-semibold text-white text-sm">+234 706 394 5538</p>
+                  <p className="text-white/60 text-xs mt-0.5">Available for reservations</p>
                 </div>
               </div>
               
-              <div className="flex items-center space-x-3">
-                <Mail className="w-5 h-5 text-spice-orange" />
+              <div className="flex items-center space-x-3 group cursor-pointer">
+                <Mail className="w-5 h-5 text-accent group-hover:text-secondary transition-colors" />
                 <div>
-                  <p className="font-medium">Info@Habesha.com</p>
-                  <p className="text-injera-beige text-sm">General inquiries</p>
+                  <p className="font-semibold text-white text-sm">Info@Habesha.com</p>
+                  <p className="text-white/60 text-xs mt-0.5">General inquiries</p>
                 </div>
               </div>
             </div>
@@ -74,88 +73,107 @@ const Footer = () => {
 
           {/* Opening Hours */}
           <div className="space-y-6">
-            <h3 className="text-xl font-bold">Opening Hours</h3>
+            <h3 className="text-xl font-bold text-white">Hours</h3>
             <div className="space-y-3">
-              <div className="flex items-center space-x-2">
-                <Clock className="w-4 h-4 text-spice-orange" />
-                <span className="text-sm">Restaurant Hours</span>
-              </div>
-              <div className="space-y-2 text-injera-beige text-sm">
-                <div className="flex justify-between">
-                  <span>Mon - Thu</span>
-                  <span>11:00 AM - 10:00 PM</span>
+              <div className="space-y-2 text-sm">
+                <div className="flex justify-between items-center py-2 border-b border-white/10">
+                  <span className="text-white/70">Mon - Thu</span>
+                  <span className="font-semibold text-white">11:00 AM - 10:00 PM</span>
                 </div>
-                <div className="flex justify-between">
-                  <span>Fri - Sat</span>
-                  <span>11:00 AM - 11:00 PM</span>
+                <div className="flex justify-between items-center py-2 border-b border-white/10">
+                  <span className="text-white/70">Fri - Sat</span>
+                  <span className="font-semibold text-white">11:00 AM - 11:00 PM</span>
                 </div>
-                <div className="flex justify-between">
-                  <span>Sunday</span>
-                  <span>12:00 PM - 9:00 PM</span>
+                <div className="flex justify-between items-center py-2">
+                  <span className="text-white/70">Sunday</span>
+                  <span className="font-semibold text-white">12:00 PM - 9:00 PM</span>
                 </div>
               </div>
               
-              
+              <div className="pt-3 border-t border-white/10">
+                <p className="text-xs text-white/60">
+                  <span className="text-accent">☕</span> Coffee ceremony every Sunday at 3:00 PM
+                </p>
+              </div>
             </div>
           </div>
 
-          {/* Quick Actions */}
+          {/* Quick Links */}
           <div className="space-y-6">
-            <h3 className="text-xl font-bold">Quick Actions</h3>
-            <div className="space-y-4">
-              <Button onClick={handleWhatsAppReservation} className="w-full bg-tertiary hover:bg-tertiary/90 text-tertiary-foreground">
-                📱 Reserve via WhatsApp
+            <h3 className="text-xl font-bold text-white">Services</h3>
+            <div className="space-y-3 text-sm">
+              <Button 
+                onClick={handleWhatsAppReservation} 
+                className="w-full bg-primary hover:bg-primary/90 text-white font-semibold shadow-md hover:shadow-lg transition-all"
+              >
+                📱 WhatsApp Booking
               </Button>
               
-              <div className="space-y-2">
-                <p className="text-sm font-medium">Popular Services:</p>
-                <ul className="text-injera-beige text-sm space-y-1">
-                  <li>• Dine-in Experience</li>
-                  <li>• Coffee Ceremony</li>
-                  <li>• Group Reservations</li>
-                  <li>• Cultural Events</li>
+              <div className="space-y-2 border-t border-white/10 pt-3">
+                <p className="text-white font-semibold text-xs uppercase tracking-wide">Offerings</p>
+                <ul className="text-white/60 text-xs space-y-1.5">
+                  <li className="flex items-center space-x-2">
+                    <span className="text-accent">✓</span>
+                    <span>Dine-in Experience</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <span className="text-accent">✓</span>
+                    <span>Coffee Ceremony</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <span className="text-accent">✓</span>
+                    <span>Group Reservations</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <span className="text-accent">✓</span>
+                    <span>Private Events</span>
+                  </li>
                 </ul>
               </div>
             </div>
           </div>
 
-          {/* Social Media & Newsletter */}
+          {/* Social Media */}
           <div className="space-y-6">
-            <h3 className="text-xl font-bold">Stay Connected</h3>
+            <h3 className="text-xl font-bold text-white">Follow Us</h3>
             
             <div className="space-y-4">
-              <p className="text-injera-beige text-sm">
-                Follow us for daily specials, cultural events, and behind-the-scenes moments.
+              <p className="text-white/70 text-sm leading-relaxed">
+                Join our community for exclusive offers, cultural events, and authentic Ethiopian storytelling.
               </p>
               
-              <div className="grid grid-cols-2 gap-2">
-                {socialLinks.map(social => <a key={social.name} href={social.url} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 p-2 bg-white/10 hover:bg-white/20 rounded-lg transition-colors text-sm">
-                    <span className="text-white">{social.icon}</span>
-                    <span>{social.name}</span>
-                  </a>)}
+              <div className="grid grid-cols-2 gap-3">
+                {socialLinks.map(social => <a 
+                  key={social.name} 
+                  href={social.url} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="flex items-center justify-center p-3 bg-white/10 hover:bg-primary hover:text-white rounded-lg transition-all duration-200 text-sm font-medium group"
+                  title={social.name}
+                >
+                  <span className="text-lg group-hover:scale-110 transition-transform">{social.icon}</span>
+                </a>)}
               </div>
             </div>
-            
-            
           </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-12 pt-8 border-t border-white/20">
+        <div className="mt-12 pt-8 border-t border-white/10">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div className="flex items-center space-x-2 text-injera-beige text-sm">
+            <div className="flex items-center space-x-2 text-white/60 text-xs">
               <span>© 2024 H&T Ethiopian Restaurant. All rights reserved.</span>
             </div>
             
-            <div className="flex items-center space-x-2 text-injera-beige text-sm">
+            <div className="flex items-center space-x-2 text-white/60 text-xs">
               <span>Made with</span>
-              <Heart className="w-4 h-4 text-primary fill-current" />
-              <span>for authentic Ethiopian culture</span>
+              <Heart className="w-3 h-3 text-accent fill-current" />
+              <span>for Ethiopian culture</span>
             </div>
           </div>
           
-          <div className="mt-4 text-center">
-            <p className="text-injera-beige text-xs">designed by Tsquare</p>
+          <div className="mt-6 text-center">
+            <p className="text-white/40 text-xs">Designed with authenticity in mind</p>
           </div>
         </div>
       </div>

@@ -1,12 +1,15 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardHeader, CardContent } from '@/components/ui/card';
 import { Link } from 'react-router-dom';
+import { useCart } from '@/context/CartContext';
+import { ShoppingBag } from 'lucide-react';
 import traditionalPlatter from '@/assets/traditional-platter.jpg';
 import coffeeCeremony from '@/assets/coffee.jpg';
 import doroWat from '@/assets/doro-wat1.jpg';
 import ethiopianPlatter from '@/assets/ethiopian-platter-pinterest.jpg';
 
 const MenuPreview = () => {
+  const { addItem } = useCart();
   const featuredItems = [
     {
       id: 1,
@@ -93,22 +96,37 @@ const MenuPreview = () => {
               </div>
 
               <CardHeader className="pb-3">
-                <div className="flex justify-between items-start">
-                  <div>
+                <div className="flex justify-between items-start gap-2">
+                  <div className="flex-1">
                     <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">
                       {item.name}
                     </h3>
-                    <p className="text-sm text-spice-orange font-medium">
+                    <p className="text-sm text-accent font-medium">
                       {item.category}
                     </p>
                   </div>
+                  <span className="text-lg font-bold text-primary whitespace-nowrap">{item.price}</span>
                 </div>
               </CardHeader>
 
-              <CardContent>
-                <p className="text-muted-foreground leading-relaxed">
+              <CardContent className="space-y-4">
+                <p className="text-muted-foreground leading-relaxed text-sm">
                   {item.description}
                 </p>
+                
+                <Button
+                  onClick={() => addItem({
+                    id: item.id,
+                    name: item.name,
+                    price: item.price,
+                    image: item.image
+                  })}
+                  className="w-full bg-primary hover:bg-primary/90 text-white font-semibold transition-all duration-200 gap-2"
+                  size="sm"
+                >
+                  <ShoppingBag className="w-4 h-4" />
+                  Add to Cart
+                </Button>
               </CardContent>
             </Card>
           ))}

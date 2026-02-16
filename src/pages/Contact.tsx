@@ -87,20 +87,19 @@ const Contact = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-b from-muted/30 to-background">
+      <section className="relative py-20 bg-gradient-to-b from-muted/50 to-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-6 animate-fade-in-up">
-            <p className="text-spice-orange font-medium text-lg">
-                Contact Us
+            <p className="text-accent font-semibold text-lg">
+              Get in Touch
             </p>
-            <h1 className="text-5xl lg:text-6xl font-bold text-foreground">
-              Visit H&T Ethiopian Restaurant
-              <span className="block text-primary"> @ the centre of Lagos</span>
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground text-balance">
+              Visit H&T Ethiopian
+              <span className="block text-gradient">Restaurant in Lagos</span>
             </h1>
-            <div className="w-24 h-1 bg-gradient-to-r from-primary to-spice-orange mx-auto rounded-full" />
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              We're located in the vibrant Lekki area of Lagos, ready to welcome you with authentic Ethiopian 
-              hospitality and cuisine. Come experience our warm atmosphere and traditional flavors.
+            <div className="w-16 h-1.5 bg-gradient-to-r from-primary to-accent mx-auto rounded-full" />
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+              Located in vibrant Lekki, we welcome you to experience authentic Ethiopian hospitality, traditional cuisine, and unforgettable moments.
             </p>
           </div>
         </div>

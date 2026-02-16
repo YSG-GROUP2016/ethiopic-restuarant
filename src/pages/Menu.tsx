@@ -5,6 +5,9 @@ import { Badge } from '@/components/ui/badge';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import SEO from '@/components/SEO';
+import ShoppingCart from '@/components/ShoppingCart';
+import { useCart } from '@/context/CartContext';
+import { ShoppingBag } from 'lucide-react';
 import traditionalPlatter from '@/assets/traditional-platter.jpg';
 import coffeeCeremony from '@/assets/coffee.jpg';
 import fish from '@/assets/fish.jpg'
@@ -23,6 +26,7 @@ import honeyCake from '@/assets/honey-cake.jpg';
 import ethiopianPlatter from '@/assets/ethiopian-platter-pinterest.jpg';
 
 const Menu = () => {
+  const { addItem } = useCart();
   const [selectedCategory, setSelectedCategory] = useState('all');
 
   const categories = [
@@ -188,9 +192,9 @@ const Menu = () => {
   return (
     <>
       <SEO 
-        title="Menu - H&T Ethiopian Restaurant | Authentic Ethiopian Dishes in Lagos"
-        description="Explore our authentic Ethiopian menu featuring traditional dishes like Doro Wat, Injera, Shiro, and more. Fresh ingredients, traditional recipes, and vegetarian options available in Lagos."
-        keywords="ethiopian menu lagos, doro wat, injera, shiro, kitfo, ethiopian vegetarian food, traditional ethiopian dishes, african cuisine menu"
+        title="Menu - H&T Ethiopian Restaurant | Authentic Ethiopian Food in Lagos - Order Online"
+        description="Discover H&T's authentic Ethiopian menu featuring Doro Wat, Kitfo, Injera, Coffee Ceremony, and more traditional dishes. Order online or dine-in at our Lekki restaurant in Lagos."
+        keywords="ethiopian restaurant menu, authentic ethiopian food, doro wat, injera, kitfo, shiro, ethiopian vegetarian, coffee ceremony, lagos restaurant, authentic ethiopian cuisine, traditional ethiopian dishes"
         type="website"
       />
       <div className="min-h-screen bg-background">
@@ -198,9 +202,14 @@ const Menu = () => {
       
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-b from-muted/30 to-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="space-y-6 animate-fade-in-up">
-            <p className="text-spice-orange font-medium text-lg">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-start mb-8">
+            <div className="flex-1" />
+            <ShoppingCart />
+          </div>
+          
+          <div className="text-center space-y-6 animate-fade-in-up">
+            <p className="text-accent font-semibold text-lg">
               መገብ - Our Menu
             </p>
             <h1 className="text-5xl lg:text-6xl font-bold text-foreground">
@@ -284,15 +293,31 @@ const Menu = () => {
                 </div>
 
                 <CardHeader className="pb-3">
-                  <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">
-                    {item.name}
-                  </h3>
+                  <div className="flex justify-between items-start">
+                    <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors flex-1">
+                      {item.name}
+                    </h3>
+                    <span className="text-lg font-bold text-primary ml-2">{item.price}</span>
+                  </div>
                 </CardHeader>
 
-                <CardContent>
-                  <p className="text-muted-foreground leading-relaxed">
+                <CardContent className="space-y-4">
+                  <p className="text-muted-foreground leading-relaxed text-sm">
                     {item.description}
                   </p>
+                  
+                  <Button
+                    onClick={() => addItem({
+                      id: item.id,
+                      name: item.name,
+                      price: item.price,
+                      image: item.image
+                    })}
+                    className="w-full bg-primary hover:bg-primary/90 text-white font-semibold transition-all duration-200 gap-2"
+                  >
+                    <ShoppingBag className="w-4 h-4" />
+                    Add to Cart
+                  </Button>
                 </CardContent>
               </Card>
             ))}

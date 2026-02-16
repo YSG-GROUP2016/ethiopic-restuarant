@@ -32,52 +32,96 @@ const Reservations: React.FC = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      <SEO title="Reservations" description="Make a reservation at H&T Ethiopian Restaurant" />
+      <SEO title="Reservations - H&T Ethiopian Restaurant | Book Your Table" description="Reserve a table at H&T Ethiopian Restaurant in Lagos. Easy online booking with WhatsApp confirmation." />
 
-      <main className="py-20 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl font-bold text-foreground mb-4">Reserve a Table</h1>
-        <p className="text-muted-foreground mb-8">Fill out the form below and we'll confirm your booking via WhatsApp.</p>
+      <main className="py-20">
+        {/* Header Section */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16 text-center animate-fade-in-up">
+          <p className="text-accent font-semibold text-lg mb-3">Make a Reservation</p>
+          <h1 className="text-5xl font-bold text-foreground mb-4">Reserve Your Table</h1>
+          <div className="w-16 h-1.5 bg-gradient-to-r from-primary to-accent rounded-full mx-auto mb-6" />
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Book your table at H&T Ethiopian Restaurant and experience authentic Ethiopian hospitality. We'll confirm your reservation via WhatsApp.
+          </p>
+        </div>
 
-        <form onSubmit={handleSubmit(onSubmit)} className="space-y-6 bg-card/50 border border-border p-8 rounded-lg">
+        <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+          <form onSubmit={handleSubmit(onSubmit)} className="space-y-6 bg-card border border-border/50 p-8 rounded-xl shadow-sm">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
-              <label className="block text-sm font-medium text-muted-foreground">Full name</label>
-              <Input {...register('name', { required: true })} placeholder="Jane Doe" />
+              <label className="block text-sm font-semibold text-foreground mb-2">Full Name *</label>
+              <Input 
+                {...register('name', { required: true })} 
+                placeholder="Jane Doe"
+                className="bg-background border-border/50"
+              />
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-muted-foreground">Phone</label>
-              <Input {...register('phone', { required: true })} placeholder="+234 8XX XXX XXXX" />
+              <label className="block text-sm font-semibold text-foreground mb-2">Phone Number *</label>
+              <Input 
+                {...register('phone', { required: true })} 
+                placeholder="+234 8XX XXX XXXX"
+                className="bg-background border-border/50"
+              />
             </div>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div>
-              <label className="block text-sm font-medium text-muted-foreground">Date</label>
-              <Input type="date" {...register('date', { required: true })} />
+              <label className="block text-sm font-semibold text-foreground mb-2">Date *</label>
+              <Input 
+                type="date" 
+                {...register('date', { required: true })} 
+                className="bg-background border-border/50"
+              />
             </div>
             <div>
-              <label className="block text-sm font-medium text-muted-foreground">Time</label>
-              <Input type="time" {...register('time', { required: true })} />
+              <label className="block text-sm font-semibold text-foreground mb-2">Time *</label>
+              <Input 
+                type="time" 
+                {...register('time', { required: true })} 
+                className="bg-background border-border/50"
+              />
             </div>
             <div>
-              <label className="block text-sm font-medium text-muted-foreground">Party size</label>
-              <Input type="number" {...register('party', { valueAsNumber: true, required: true })} min={1} defaultValue={2} />
+              <label className="block text-sm font-semibold text-foreground mb-2">Party Size *</label>
+              <Input 
+                type="number" 
+                {...register('party', { valueAsNumber: true, required: true })} 
+                min={1} 
+                defaultValue={2}
+                className="bg-background border-border/50"
+              />
             </div>
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-muted-foreground">Email (optional)</label>
-            <Input {...register('email')} placeholder="you@example.com" />
+            <label className="block text-sm font-semibold text-foreground mb-2">Email (Optional)</label>
+            <Input 
+              {...register('email')} 
+              placeholder="you@example.com"
+              className="bg-background border-border/50"
+            />
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-muted-foreground">Notes (optional)</label>
-            <textarea {...register('notes')} className="w-full rounded-md border border-border p-2 bg-transparent text-foreground" rows={4} />
+            <label className="block text-sm font-semibold text-foreground mb-2">Special Requests (Optional)</label>
+            <textarea 
+              {...register('notes')} 
+              placeholder="Any dietary requirements, special occasions, or preferences..."
+              className="w-full rounded-md border border-border/50 p-3 bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary" 
+              rows={4}
+            />
           </div>
 
-          <div className="flex justify-end">
-            <Button type="submit" className="bg-primary">Request Reservation</Button>
+          <div className="flex justify-end gap-3 pt-4 border-t border-border/30">
+            <Button 
+              type="submit" 
+              className="bg-primary hover:bg-primary/90 text-white font-semibold px-8"
+            >
+              Complete Reservation
+            </Button>
           </div>
         </form>
       </main>
