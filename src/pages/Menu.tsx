@@ -21,6 +21,7 @@ import sambusa from '@/assets/sambusa.jpg';
 import fresh from '@/assets/Fresh-mango.jpg';
 import honeyCake from '@/assets/honey-cake.jpg';
 import ethiopianPlatter from '@/assets/ethiopian-platter-pinterest.jpg';
+import meatComboPlatter from '@/assets/meat-combo-platter.jpg';
 
 const Menu = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -86,6 +87,15 @@ const Menu = () => {
     },
     {
       id: 6,
+      name: "Dekak Tibs",
+      description: "Crispy, bite-sized pieces of beef stir-fried over high heat with onions, garlic, and Ethiopian spices. Dekak Tibs delivers a bold, smoky flavor and a satisfying crunch, making it a perfect choice for those who enjoy a more textured, well-seared tibs dish.",
+      price: "₦7,800",
+      category: "mains",
+      image: beefTibs,
+      spicy: true,
+    },
+    {
+      id: 7,
       name: "Fish Kitfo",
       description: "Fresh fish prepared kitfo style with traditional Ethiopian spices",
       price: "₦8,000",
@@ -160,6 +170,16 @@ const Menu = () => {
       price: "₦2,000",
       category: "beverages",
       image: fresh,
+    },
+
+    {
+      id: 16,
+      name: "Meat Combo Platter (For 1 person)",
+      description: "Served with 4 meat dishes and 2 vegan dishes",
+      price: "",
+      category: "mains",
+      image: meatComboPlatter,
+      popular: true,
     },
 
     // Desserts
